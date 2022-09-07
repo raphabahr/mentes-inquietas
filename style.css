@@ -1,0 +1,37 @@
+@import url("./css/carrossel.css");
+@import url("./css/header.css");
+@import url("./css/menu-lateral.css");
+@import url("./css/main.css");
+@import url("./css/footer.css");
+@import url("./css/banner.css");
+@import url("./css/contato.css");
+@import url(./css/light-botao.css);
+
+:root {
+    --branco: #f4f6fc;
+    --fonte-principal: "Poppins";
+    --fonte-secundaria: "Josefin Sans";
+    --azul-fundo: #050a30;
+    --azul: #233dff;
+    --azul-claro: #cae8ff;
+    --cinza: #EBECEE;
+    --preto: #000000;
+    --cinza-escuro: #3a3c3f;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cinza);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 1450px) {
+    section {
+        margin: 5em;
+    }
+}

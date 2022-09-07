@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mentes Inquietas!</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="cabecalho__botao">
+                <label for="menu" class="cabecalho__rotulo">
+                    <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+                        fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                            <animate dur="0.2s" attributeName="d"
+                                values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                                begin="start.begin" />
+                            <animate dur="0.2s" attributeName="d"
+                                values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                                begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                                begin="click" />
+                            <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                        </rect>
+                    </svg>
+                </label>
+
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categories</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Astronomia</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Cyberpunk & Transhumanismo</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Documentarios</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Filmes</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Games</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Livros</a>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Séries</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Tecnologia</a>
+                    </li>
+                </ul>
+
+                <div class="imagem__logo">
+                    <img src="./imagens/logotrans.png" alt="Logo da Mentes Inquietas" class="container__imagem--logo">
+                </div>
+                <h1 class="container__titulo">Mentes Inquietas!</h1>
+                <ul class="botao__desktop">
+                    <input type="checkbox" id="menu" class="categoria__botao">
+                    <label for="menu">
+                        <li class="categoria__titulo">Categorias</li>
+                    </label>
+                </ul>
+
+                <div class="header__icones--sacola">
+                    <a href="#" class="container__link--sacola">
+                        <img src="./imagens/Compras.png" alt="Carrinho de Compras" class="container__imagem">
+                        <p class="container__texto"> </p>
+                    </a>
+                </div>
+
+                <div class="header__icones--perfil">
+                    <a href="#" class="container__link--perfil">
+                        <img src="./imagens/Usuario.png" alt="Meu Perfil" class="container__imagem">
+                        <p class="container__texto"> </p>
+                    </a>
+                </div>
+
+                <div class="lightdark">
+                    <input type="checkbox" class="checkbox__light" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <section class="banner">
+                <h2 class="banner__titulo">Para você que tem a mente inquieta e adora conhecer algo novo! </h2>
+                <p class="banner__texto">Mentes Inquietas é para quem gosta de análises e resenhas completas sobre livros,
+                    filmes, séries e games.
+                <p class="banner__texto"> Aqui você encontra também tudo sobre tecnologia e inovação.</p>
+                </p>
+                <input type="search" class="banner_pesquisa" placeholder="O que você procura ?">
+            </section>
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Livros</h2>
+
+
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="./imagens/cthulhu.jpeg" alt="Livro  Cthulhu"></div>
+                        <div class="swiper-slide"><img src="./imagens/darktower-vol1.jpg" alt="Livro Torre Negra"></div>
+                        <div class="swiper-slide"><img src="./imagens/neuromancer.jpg" alt="Livro Neuromancer"></div>
+                        <div class="swiper-slide"><img src="./imagens/lordoftherings.jpg" alt="Livro Senhor dos Aneis">
+                        </div>
+                        <div class="swiper-slide"><img src="./imagens/1984.jpg" alt="Livro 1984"></div>
+                        <div class="swiper-slide"><img src="./imagens/sapiens.jpg" alt="Livro Sapiens"></div>
+                        <div class="swiper-slide"><img src="./imagens/noamc.jpg" alt="Livro Para Entender o Poder"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo"> Série mais vista</h3>
+                            <h2 class="descricao__titulo-tema">Westworld</h2>
+                            <p class="descricao__texto">Westworld é um parque temático futurístico para adultos, dedicado à
+                                diversão dos ricos. Simulando o Velho Oeste, povoado por androides, programados para
+                                acreditarem
+                                que são humanos e vivem no mundo real.</p>
+                        </div>
+                        <img src="./imagens/westworld.png" alt="Série Westworld" class="descricao__imagem">
+                    </div>
+
+                    <div class="card__botoes">
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo"> Filme mais visto</h3>
+                            <h2 class="descricao__titulo-tema">Fight Club</h2>
+                            <p class="descricao__texto">Jack sofre de insônia. Tem uma vida monótona. Um emprego chato. Isso
+                                muda radicalmente quando ele conhece Tyler, um vendedor de sabão que acredita na adrenalina
+                                como
+                                forma de tirar os zumbis sociais do marasmo.</p>
+                        </div>
+                        <img src="./imagens/fightclub.png" alt="Filme Fight Club" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="carrossel__titulo">Games</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/RDR.png" alt="Jogo Red Dead Redenption"></div>
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/The_Last_of_Us.png" alt="Jogo Last of Us"></div>
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/thewitcher3.jpg" alt="Jogo The Witcher 3"></div>
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/ds.jpg" alt="Jogo Deus Ex Manking Divided"></div>
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/DayZ.jpg" alt="Jogo Day Z"></div>
+                    <div class="swiper-slide"><img class="carrousel__image" src="./imagens/elite-dangerous.jpg" alt="Jogo Elite Dangerous"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <h2 class="carrossel__titulo">Documentários</h2>
+
+            <div class="card__container">
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Documentário mais visto </h3>
+                            <h2 class="descricao__titulo-tema">Documentários Zeitgeist</h2>
+                            <p class="descricao__texto">É um documentário que aborda assuntos polêmicos e que estão
+                                interligados. O filme trata dos elos entre a religião, mercados financeiros, estrutura do
+                                poder
+                                internacional e o acontecimento de 11 de setembro.</p>
+                        </div>
+                        <img src="./imagens/zeitgeist.png" alt="Documentário Zeitgeist" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Documentário mais curtido </h3>
+                            <h2 class="descricao__titulo-tema">Uma verdade incoveniente</h2>
+                            <p class="descricao__texto">É um documentário norte-americano de 2006 dirigido por Davis
+                                Guggenheim
+                                sobre a campanha do ex-Vice-presidente dos Estados Unidos Al Gore para educar os cidadãos do
+                                mundo acerca do aquecimento global.</p>
+                        </div>
+                        <img src="./imagens/verdade-incoveniente (1).png" alt="Documentário Zeitgeist"
+                            class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="contato">
+                <div class="contato__descricao">
+                    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                    <p class="contato__texto">Atualizações das análises, novos livros, games, promoções e muito mais.
+                    </p>
+                </div>
+                <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+            </section>
+        </section>
+
+        <footer class="rodape">
+            <div class="rodape__container" onclick="backTop();">
+                <article class="container__imagem--rodape">
+                    <button class="scrollTop">
+                        <img src="./imagens/logotrans.png" alt="Logo da Mentes Inquietas" class="rodape__logo--front">
+                    </button>
+                    <button class="scrollTop--tabletPc">
+                        <img src="./imagens/logoc.png" alt="Logo da Mentes Inquietas" class="rodape__logo--tabletPc">
+                    </button>
+                    <p class="logo__titulo">Mentes Inquietas</p>
+                </article>
+
+                <ul class="rodape__social">
+                    <li class="rodape__social--icones">
+                        <a href="www.facebook.com" title="Facebook"><img src="./imagens/icones/facebook-icon.png"
+                                alt="Icone do facebook" class="rodape__icones--social"></a>
+                    </li>
+                    <li class="rodape__social--icones">
+                        <a href="www.twitter.com.br" title="Twitter"><img src="./imagens/icones/Twitter-icon.png"
+                                alt="Icone do Twitter" class="rodape__icones--social"></a>
+                    </li>
+                    <li class="rodape__social--icones">
+                        <a href="www.instagram.com" title="Instagram"><img src="./imagens/icones/Instagram--icon.png"
+                                alt="Icone do Instagram" class="rodape__icones--social"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container__link">
+                <nav>
+                    <ul class="rodape__navegacao">
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/planetas.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Astronomia</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/cpunk.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Cyberpunk</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/livro.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Documentários</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/camera.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Filmes</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/games.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Games</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/documentario.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Livros</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/series.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Séries</a>
+                        </li>
+                        <li class="rodape__link">
+                            <img src="./imagens/icones/tecnologia.png" alt="" class="rodape__icones">
+                            <a href="#" class="lista-rodape__link">Tecnologia</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright">&copy; Copyright Mentes Inquietas - By Raphabahr 2022</p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/6edddea7af.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="/js/index.js"></script>
+        <script src="/js/swiper.js"></script>
+        <script src="/js/scroll.js"></script>
+    </body>
+</html>
