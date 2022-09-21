@@ -198,4 +198,8 @@
     .contato {
         flex-direction: column;
     }
+
+    .swiper-pagination-bullet .dark {
+
+    }
 }

@@ -61,3 +61,12 @@
         background-position: 2.5em;
     }
 }
+
+
+
+@media screen and (min-width: 1200px) {
+    .banner.dark {
+       color: white;
+       background: black;
+    }
+}

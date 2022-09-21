@@ -5,7 +5,7 @@
 @import url("./css/footer.css");
 @import url("./css/banner.css");
 @import url("./css/contato.css");
-@import url(./css/light-botao.css);
+@import url("./css/light-botao.css");
 
 :root {
     --branco: #f4f6fc;
