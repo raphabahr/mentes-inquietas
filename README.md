@@ -1,6 +1,6 @@
 This is my first project !
 
-# PMentes Inquietas - Raphael Bahr - In progress
+# Mentes Inquietas - Raphael Bahr - In progress
 
 # Sobre o projeto - About the project
 Minha página de front-end, totalmente responsivo,  desenvolvido para me apresentar e mostrar um pouco do meu conhecimento em Front-end.
