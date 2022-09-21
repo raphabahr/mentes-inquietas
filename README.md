@@ -1,102 +1,55 @@
-# Guia de estilos
+This is my first project !
 
-Toda a estilização que será usada no projeto dentro do figma.
+# PMentes Inquietas - Raphael Bahr - In progress
 
+# Sobre o projeto - About the project
+Minha página de front-end, totalmente responsivo,  desenvolvido para me apresentar e mostrar um pouco do meu conhecimento em Front-end.
+<br>
+My first front-end page, fully responsive, developed to introduce myself and show some of my knowledge in Front-end.
+ 
+Link do projeto - 
+-----------------------------
 
-## Fonte
+## Projeto - Front end - Tecnologias usadas - Technologies used
+- HTML / CSS / JS  
 
-```html
+## Métodos - Methods
+
+* Mobile first
+
+## Serviços usados - Services Used
+
+* Github
+* Netlify
+
+## Começando - Getting started
+
+* Depende de: Dependency
+  - VScode  
+  - Liveview
+  
+* Para rodar o projeto - To run the project.
+  - Open the folder in VScode and start Liveview on index.html. 
+
+## Links
+  - Deploy on netlify: https://endearing-arithmetic-cc8603.netlify.app/
+  - Repository: https://github.com/raphabahr/mentes-inquietas
+    - In case of sensitive bugs like security vulnerabilities, please contact
+      raphabahr@gmail.com directly instead of using issue tracker. We value your effort
+      to improve the security and privacy of this project!
+      
+ ## Fonte
+
 Open Sans:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-```
+    
 
-## Cores
+# Autor
+Raphael Bahr
 
-corpo: `#1D232A`
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/raphabahr/Portfolio/blob/main/LICENCE) 
 
-cabeçalho: `#1D232A`
+https://br.linkedin.com/in/raphael-bahr-92a73468
 
-cabeçalho mobile: `#15191C`
-
-menu lateral: `#15191C`
-
-cartão: `#2C343A`
-
-fonte: `#FFFFFF`
-
-fonte alternativa: `#95999C`
-
-links: `#0480DC`
-
-botão: `#0480DC`
-
-sombras: `0px 4px 4px rgba(0, 0, 0, 0.16)`
-
-## Ícones
-
-Estão dentro do arquivo de fonte `icones.ttf`. Para usar, primeiro importe a fonte no projeto usando `@font-face` e depois utilize os códigos abaixo para exibir o ícone.
-
-```css
-@font-face {
-    font-family: 'icones';
-    src: url(../font/icones.ttf);
-}
-```
-
-> Cuidado com a localização do arquivo `icones.ttf`
-
-Camisas = `\e900`
-
-Carrinho = `\e901`
-
-Inicio = `\e902`
-
-Integrantes = `\e903`
-
-Menu = `\e904`
-
-Moeda = `\e905`
-
-Notificação = `\e906`
-
-Pico = `\e908`
-
-Picos = `\e909`
-
-Pinturas = `\e90a`
-
-Play = `\e90b`
-
-Relogio = `\e90c`
-
-Seta-baixo = `\e90d`
-
-Videos = `\e90e`
-
-Visualizacao = `\e90f`
-
-## Espaçamentos
-
-Espaço interno botão: `8px`
-
-Espaço entre elementos do botão: `8px`
-
-Espaço entre elementos: `16px/8px`
-
-Espaçamento interno do corpo: `16px`
-
-Espaçamento entre o título do cartão de recentes e seus itens: `24px`
-
-## Tamanhos
-
-Tamanho do dispositivo mobile: `360px`
-
-Tamanho do dispositivo desktop: `1440px`
-
-Largura máxima do conteúdo principal: `1120px`
-
-Largura máxima de um cartão desktop: `256px`
-
-Altura mínima de um cartão: `320px`
