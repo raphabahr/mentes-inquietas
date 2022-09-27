@@ -1,5 +1,5 @@
 body.dark {
-	 background: var(--preto) ;/*#292C35 */
+	 background: rgb(22, 21, 21) ;/*#292C35 */
 }
 
 .lightdark {
@@ -46,9 +46,61 @@ body.dark {
 		color: #f39c12;
 	}
 
-	.dark .card {
+	.dark .container {
 		background-color: black;
 	}
+
+	.dark .carrossel__titulo {
+		background-color: black;
+		color: white;
+	}
+
+	.dark .banner, .dark .banner__titulo, .dark .banner__texto, .dark .contato {
+		background-color: rgb(22, 21, 21);
+		color: white;
+	}
+
+	.dark .contato__descricao,.dark .contato__titulo,.dark .contato__texto {
+		background-color: rgb(22, 21, 21);
+		color: white;
+	}
+
+	.dark .rodape {
+		background-color: rgb(22, 21, 21);
+	}
+
+	.dark .banner_pesquisa {
+		background-color: transparent;
+		border: 1px solid var(--branco);
+		color: var(--branco);
+	}
+
+	.dark .banner_pesquisa::placeholder {
+		color: var(--branco);
+		background: none;
+		background-position: 2em;
+	}
+
+	.dark .card {
+		background-color: rgb(22, 21, 21);
+	}
+
+	.dark .descricao__texto {
+		color: white;
+	}
+
+	.dark .descricao__titulo-tema {
+		color: var(--branco);
+	}
+
+	.dark .scrollTop {
+		background-color: rgb(22, 21, 21);
+	}
+
+	.dark .card, .dark .contato {
+		box-shadow: rgba(46, 45, 45, 1) 0px 4px 4px;
+	}
+
 
 	.lightdark{
 		display: grid;

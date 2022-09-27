@@ -85,4 +85,8 @@
     .contato__descricao {
         margin-top: 1em;
     }
+
+    .contato__texto {
+        font-size: 15px;
+    }
 }

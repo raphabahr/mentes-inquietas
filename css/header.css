@@ -30,6 +30,7 @@
     display: flex;
     position: fixed;
     background: transparent;
+    z-index: 9999;
 }
 
 .container__botao {
@@ -73,12 +74,6 @@
     align-items: center;
 }
 
-.header__icones--sacola {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 4;
-}
-
 .header__icones--perfil {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -99,16 +94,7 @@
 }
 
 .container__imagem--logo {
-    width: 85%;
-}
-
-.container__link--sacola{
-    grid-column: 4;
-    grid-row: 1;
-    display: grid;
-    justify-content: end;
-    align-content: start;
-    cursor: pointer;
+    width: 70%;
 }
 
 .container__link--perfil{
@@ -126,6 +112,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 .container__botao:checked~.lista-menu {
@@ -184,11 +171,9 @@
     padding: 0.8em;
 }
 
-
-
 /* Media querys  */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
 
     .hb {
         display: none;
@@ -206,7 +191,7 @@
 
     .categoria__titulo {
         color: var(--branco);
-        font-size: 26px;
+        font-size: 22px;
         margin-right: 3em;
         font-weight: 800;
         cursor: pointer;
@@ -226,7 +211,7 @@
     }
 
     .container__titulo {
-        font-size: 28px;
+        font-size: 24px;
         margin-right: 1em;
     }
 
@@ -246,9 +231,43 @@
         text-align: center;
         font-size: 20px;
     }
+
+    .descricao__titulo {
+        font-size: 20px;
+    }
+
+    .descricao__titulo-tema {
+        font-size: 22px;
+    }
+
+    .descricao__texto {
+        font-size: 15px;
+    }
+
 }
 
+@media screen and (min-width: 720px) {
+
+    .imagem__logo {
+        padding: 0.5em 0 0.5em 2em;
+    }
+
+    .container__titulo {
+        font-size: 30px;
+    }
+
+    .categoria__titulo {
+        font-size: 28px;
+    }
+
+}
+
+
 @media screen and (min-width: 1200px) {
+
+    .container__titulo {
+        font-size: 28px;
+    }
 
     .lista-menu {
         margin-top: 70px;
@@ -266,22 +285,26 @@
     }
 
     .container__titulo {
-        font-size: 36px;
+        font-size: 40px;
         position: relative;
     }
 
     .categoria__titulo {
-        font-size: 32px;
+        font-size: 38px;
     }
-
 
     .imagem__logo {
         margin: 1em;
     }
 
     .container__imagem--logo {
-        width: 50%;
-        position: relative;
+        width: 70%;
+        margin: 0;
+    }
 
+    .container__imagem {
+        width: 30px;
+        height: 30px;
     }
 }
+

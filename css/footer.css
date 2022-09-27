@@ -95,8 +95,9 @@
 }
 
 
-@media screen and (min-width: 768px) {
-    .container__link, .rodape__navegacao, nav{
+@media screen and (min-width: 720px) {
+
+    .container__link, .rodape__navegacao, nav {
         height: 100%;
     }
 
@@ -153,6 +154,11 @@
     .rodape__icones {
         display: block;
         width: 15%;
+    }
+
+    .container__imagem--rodape {
+        display: flex;
+        flex-direction: column;
     }
 }
 

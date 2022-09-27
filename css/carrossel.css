@@ -72,6 +72,8 @@
     line-height: 1.5;
     font-weight: 400;
     margin: 0.5em 0.5em;
+    cursor: pointer;
+
 }
 
 .descricao__imagem {
@@ -96,7 +98,15 @@
     color: var(--preto);
 }
 
+@media screen and (min-width: 600px) {
+    .swiper-slide img {
+        width: 70%;
+        margin-left: 2.5em;
+    }
+}
+
 @media screen and (min-width: 768px) {
+
     .carrossel__titulo {
         font-size: 30px;
         font-weight: 700;
@@ -124,15 +134,19 @@
         flex-wrap: wrap;
     }
 
+    .card__container {
+        display: flex;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
     }
 
     .card__botoes {
-        width: 50%;
+        width: 30%;
         align-self: center;
-        margin-right: 14em;
+        margin-right: 10em;
         border: 1px solid var(--azul-fundo);
         border-radius: 24px;
         cursor: pointer;
@@ -141,11 +155,17 @@
     .botoes__ancora {
         border: 1px solid var(--azul-fundo);
         border-radius: 24px;
-        font-size: 22px;
+        font-size: 15px;
+        padding: 0.5em;
     }
 
     .swiper-pagination {
         margin: 2em 0 3em 0;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+        margin-left: 3em;
     }
 
     .contato {
@@ -160,8 +180,8 @@
 @media screen and (min-width: 1250px) {
 
     .swiper-slide img {
-        width: 60%;
-        margin-left: 3em;
+        width: 100%;
+        margin-left: 1em;
     }
 
     .carrossel__container {
@@ -173,8 +193,8 @@
     }
 
     .descricao__texto {
-        cursor: pointer;
         transition: 0.5s;
+        font-size: 24px;
     }
 
     .descricao__texto:hover {
@@ -197,9 +217,5 @@
 
     .contato {
         flex-direction: column;
-    }
-
-    .swiper-pagination-bullet .dark {
-
     }
 }

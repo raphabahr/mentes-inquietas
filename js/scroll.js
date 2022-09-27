@@ -1,7 +1,7 @@
 
 window.addEventListener('scroll', function () {
     let scroll = document.querySelector('scrolltop');
-    scroll.classList.toggle('active', window.scrolly > 450)
+    scroll.classList.toggle('active', window.scroll > 450)
 })
 
 function backTop() {
