@@ -7,7 +7,7 @@ Minha página de front-end, totalmente responsivo,  desenvolvido para me apresen
 <br>
 My first front-end page, fully responsive, developed to introduce myself and show some of my knowledge in Front-end.
  
-Link do projeto - 
+Link do projeto - https://serene-rugelach-b14c9d.netlify.app
 -----------------------------
 
 ## Projeto - Front end - Tecnologias usadas - Technologies used
