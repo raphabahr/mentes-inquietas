@@ -16,6 +16,7 @@
     width: 100%;
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
 }
 
 .swiper-button-prev, .swiper-button-next {
@@ -198,7 +199,7 @@
     }
 
     .descricao__texto:hover {
-        color: blue;
+        color: var(--azul);
     }
 
     .card__container {

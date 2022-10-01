@@ -72,7 +72,6 @@ body.dark {
 	.dark .banner_pesquisa {
 		background-color: transparent;
 		border: 1px solid var(--branco);
-		color: var(--branco);
 	}
 
 	.dark .banner_pesquisa::placeholder {
@@ -89,6 +88,10 @@ body.dark {
 		color: white;
 	}
 
+	.dark .descricao__texto:hover {
+		color: var(--azul);
+	}
+
 	.dark .descricao__titulo-tema {
 		color: var(--branco);
 	}
@@ -100,7 +103,6 @@ body.dark {
 	.dark .card, .dark .contato {
 		box-shadow: rgba(46, 45, 45, 1) 0px 4px 4px;
 	}
-
 
 	.lightdark{
 		display: grid;
